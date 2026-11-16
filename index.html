@@ -3,29 +3,67 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Block Hatch</title>
-<meta name="description" content="Block Hatch: a block puzzle game where clearing lines hatches collectible animal pals.">
+<title>Block Hatch: Block Puzzle</title>
+<meta name="description" content="Block Hatch: a cozy block puzzle where every line you clear hatches a cute 3D pal. Free on Google Play.">
+<meta property="og:title" content="Block Hatch: Block Puzzle">
+<meta property="og:description" content="Clear lines, hatch cute 3D pals and beat a boss every 10 levels. Free on Google Play.">
+<meta property="og:image" content="https://blockhatchsupport-bit.github.io/img/feature.jpg">
 <link rel="icon" href="icon.png">
 <style>
 :root{--bg:#1d1b3a;--card:#2a2752;--fg:#f4f2ff;--muted:#aaa5d8;--accent:#ffc94d;color-scheme:dark}
-:root[data-theme="light"]{--bg:#f6f5fb;--card:#ffffff;--fg:#1d1b3a;--muted:#5d5880;--accent:#6b4fd8;color-scheme:light}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#f6f5fb;--card:#ffffff;--fg:#1d1b3a;--muted:#5d5880;--accent:#6b4fd8;color-scheme:light}}
+*{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;padding:40px 16px}
-main{max-width:560px;margin:0 auto;text-align:center}
-img{width:128px;height:128px;border-radius:28px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
-h1{font-size:36px;margin:20px 0 4px}
-p{color:var(--muted);margin:0 0 24px}
+main{max-width:640px;margin:0 auto;text-align:center}
+.icon{width:128px;height:128px;border-radius:28px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+h1{font-size:38px;margin:18px 0 4px;line-height:1.15}
+.tag{color:var(--muted);margin:0 0 22px}
+.play{display:inline-flex;align-items:center;gap:12px;background:#000;color:#fff;text-decoration:none;border-radius:12px;padding:10px 20px;border:1px solid #555}
+.play small{display:block;font-size:11px;line-height:1;opacity:.85}.play b{display:block;font-size:20px;line-height:1.2}
+.trailer{display:block;position:relative;margin:28px 0 8px;border-radius:18px;overflow:hidden}
+.trailer img{display:block;width:100%;height:auto}
+.trailer span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.trailer span i{width:72px;height:72px;border-radius:50%;background:rgba(255,0,0,.92);display:flex;align-items:center;justify-content:center}
+.trailer span i:after{content:"";border-left:24px solid #fff;border-top:15px solid transparent;border-bottom:15px solid transparent;margin-left:6px}
+.shots{display:flex;gap:10px;overflow-x:auto;padding:14px 2px;scroll-snap-type:x mandatory}
+.shots img{width:160px;height:auto;border-radius:14px;flex:none;scroll-snap-align:start}
 .card{background:var(--card);border-radius:18px;padding:20px;text-align:left;margin:16px 0}
-.card h2{font-size:18px;margin:0 0 8px;color:var(--fg)}
+.card h2{font-size:18px;margin:0 0 8px}
+.card ul{margin:0;padding-left:20px;color:var(--muted)}
 a{color:var(--accent)}
+.social{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:8px 0}
+.social a{text-decoration:none;background:var(--card);padding:8px 16px;border-radius:999px}
 nav{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:28px}
-footer{color:var(--muted);font-size:14px;margin-top:32px}
+footer{color:var(--muted);font-size:14px;margin-top:28px}
 </style>
 </head>
 <body>
 <main>
-<img src="icon.png" alt="Block Hatch app icon">
+<img class="icon" src="icon.png" alt="Block Hatch app icon">
 <h1>Block Hatch</h1>
-<p>Drop blocks, clear lines and hatch eggs into collectible animal pals. Endless levels, a boss every 10 levels, and a relaxing classic mode.</p>
+<p class="tag">A cozy block puzzle where every line you clear hatches a cute 3D pal.</p>
+<a class="play" href="https://play.google.com/store/apps/details?id=com.blockhatch.game">
+ <svg width="28" height="30" viewBox="0 0 28 30" aria-hidden="true"><path d="M1 1l15 14L1 29c-.6-.3-1-1-1-1.8V2.8C0 2 .4 1.3 1 1z" fill="#00d7fe"/><path d="M21 10l-5 5 5 5 5.3-3c1.5-.9 1.5-3.1 0-4z" fill="#ffce00"/><path d="M16 15L1 29c.6.3 1.4.3 2-.1L21 20z" fill="#ff3a44"/><path d="M16 15L1 1c.6-.3 1.4-.3 2 .1L21 10z" fill="#00f076"/></svg>
+ <span><small>GET IT ON</small><b>Google Play</b></span></a>
+<a class="trailer" href="https://youtu.be/DsZGIz-cZTc" aria-label="Watch the Block Hatch trailer on YouTube"><img src="img/feature.jpg" alt="Block Hatch trailer"><span><i></i></span></a>
+<div class="shots">
+ <img src="img/1-play.jpg" alt="Clear lines, beat every level">
+ <img src="img/2-hatch.jpg" alt="Hatch cute pals that grow up">
+ <img src="img/6-boss.jpg" alt="Beat a boss every 10 levels">
+ <img src="img/8-house.jpg" alt="Build a home for your pals">
+</div>
+<div class="card">
+<h2>What's inside</h2>
+<ul>
+<li>Relaxing 8x8 block puzzle with big combos</li>
+<li>12 original pals to hatch, dress and house</li>
+<li>Hundreds of levels and a boss every 10 levels</li>
+<li>Seasonal events with limited items: Christmas is on now</li>
+<li>Daily challenge, weekly leagues and Star Road rewards</li>
+<li>Works offline, no account needed, 12 languages</li>
+</ul>
+</div>
+<div class="social"><a href="https://www.youtube.com/@BlockHatch">YouTube</a><a href="https://www.tiktok.com/@blockhatch.game">TikTok</a><a href="https://www.instagram.com/blockhatch/">Instagram</a></div>
 <div class="card">
 <h2>Support</h2>
 Questions, bugs or purchase problems: <a href="mailto:blockhatch.support@gmail.com">blockhatch.support@gmail.com</a>
